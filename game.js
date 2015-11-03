@@ -67,6 +67,17 @@ if ((userResponse5 === 'yes')||(userResponse5 === 'Yes')||(userResponse5 === 'YE
 };
 
 
+// Script for the SIXTH question
+
+var userResponse6 = Number(prompt('Is my age closer to 20 or 30?'));
+
+if (userResponse6 === 30) {
+  console.log('Correct. I am 28 years old!');
+  tally++;
+}else {
+  console.log('Incorrect. I am 28 years old and thus closer to 30!');
+};
+
 // Script for TOTAL score
 
 if (tally >= 4) { //majority reaction
