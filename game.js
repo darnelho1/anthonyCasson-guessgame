@@ -55,6 +55,18 @@ if ((userResponse4 === 'yes')||(userResponse4 === 'Yes')||(userResponse4 === 'YE
 };
 
 
+// Script for the FIFTH question
+
+var userResponse5 = prompt('Do I own a dog?');
+
+if ((userResponse5 === 'yes')||(userResponse5 === 'Yes')||(userResponse5 === 'YES')||(userResponse5 === 'Y')||(userResponse5 === 'y')) {
+  console.log('Incorrect. I wish I did!');
+}else {
+  console.log('You are correct. I will one day, though!');
+  tally++;
+};
+
+
 // Script for TOTAL score
 
 if (tally >= 4) { //majority reaction
