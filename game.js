@@ -35,11 +35,11 @@ if ((userResponse2 === 'yes')||(userResponse2 === 'Yes')||(userResponse2 === 'YE
 
 var userResponse3 = prompt('Is my favorite color green?');
 
-if ((userResponse3 === 'no')||(userResponse3 === 'No')||(userResponse3 === 'NO')||(userResponse3 === 'N')||(userResponse3 === 'n')) {
+if ((userResponse3 === 'yes')||(userResponse3 === 'Yes')||(userResponse3 === 'YES')||(userResponse3 === 'Y')||(userResponse3 === 'y')) {
+  console.log('Incorrect. I like blue more than I like green!');
+}else {
   console.log('You are right! I much prefer blue.');
   tally++;
-}else {
-  console.log('Incorrect. I like blue more than I like green!');
 };
 
 
