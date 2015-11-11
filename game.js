@@ -3,7 +3,8 @@
 
 var tally = 0; // tallies total score
 var positiveResponse = ["You are correct! It's quite the battle sedan.",'Correct! Yeeehhhaaawww!','No','Correct! I graduated from Oregon State University.','Incorrect. I wish I did!','Correct! I am 28 years old!'];
-var negativeResponse = ["Actually, I do! It's a pretty awesome ride.",'Tisk, tisk, tisk! Incorrect. Was to!','You are correct! I much prefer blue.','Incorrect. I graduated from Oregon State University','You are correct! I will one day, though!','Incorrect. I am 28 years old and thus closer to 30!']
+var negativeResponse = ["Actually, I do! It's a pretty awesome ride.",'Tisk, tisk, tisk! Incorrect. Was to!','You are correct! I much prefer blue.','Incorrect. I graduated from Oregon State University','You are correct! I will one day, though!','Incorrect. I am 28 years old and thus closer to 30!'];
+var question = ['Do I drive a sweet 1986 Volvo?','Did I grow up in Texas?','Is my favorite color green?','Did I go to college?','Do I own a dog?','Is my age closer to 20 or 30?'];
 
 var response;
 
@@ -33,7 +34,7 @@ var checkAnswer = function(p1,p2,p3){
 
 //Script for the FIRST question
 
-var userResponse1 = prompt('Do I drive a sweet 1986 Volvo?');
+var userResponse1 = prompt(question[0]);
 
 checkAnswer(userResponse1,positiveResponse[0],negativeResponse[0]);
 document.getElementById('a1').innerHTML = response;
@@ -42,35 +43,35 @@ document.getElementById('a1').innerHTML = response;
 
 
 
-var userResponse2 = prompt('Did I grow up in Texas?');
+var userResponse2 = prompt(question[1]);
 
 checkAnswer(userResponse2,positiveResponse[1],negativeResponse[1]);
 document.getElementById('a2').innerHTML = response;
 
 // Script for the THIRD question
 
-var userResponse3 = prompt('Is my favorite color green?');
+var userResponse3 = prompt(question[2]);
 
 checkAnswer(userResponse3,positiveResponse[2],negativeResponse[2]);
 document.getElementById('a3').innerHTML = response;
 
 // Script for the FOURTH question
 
-var userResponse4 = prompt('Did I go to college?');
+var userResponse4 = prompt(question[3]);
 
 checkAnswer(userResponse4,positiveResponse[3],negativeResponse[3]);
 document.getElementById('a4').innerHTML = response;
 
 // Script for the FIFTH question
 
-var userResponse5 = prompt('Do I own a dog?');
+var userResponse5 = prompt(question[4]);
 
 checkAnswer(userResponse5,positiveResponse[4],negativeResponse[4]);
 document.getElementById('a5').innerHTML = response;
 
 // Script for the SIXTH question
 
-var userResponse6 = Number(prompt('Is my age closer to 20 or 30?'));
+var userResponse6 = Number(prompt(question[5]));
 
 if (userResponse6 === 30) {
   document.getElementById('a6').innerHTML = positiveResponse[5];
