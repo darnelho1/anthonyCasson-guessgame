@@ -15,4 +15,14 @@ Removed alerts added writes to the document object with the responses.
 Driver: Darnell Holder
 Navigator: Anthony Casson
 
+Update 11.11.2015
+
+Fixed error in function that caused incorrect answers to appear in certain cases.
+Moved questions to arrays.
+Added images.
+Addes CSS styles sheet.
+
+Driver: Darnell Holder
+Navigator: Anthony Casson
+
 
